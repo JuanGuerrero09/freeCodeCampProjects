@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principles of Object Oriented Programming</title>
+</head>
+<body>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>Introduction</header>
+            <p>Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects</p>
+            <p>Object programming is well-suited for programs that are large, complex and actively updated or maintained.</p>
+            <h2>Benefits of OOP</h2>
+            <ul>
+                <li>Easier debuging</li>
+                <li>Reuse of code through inheritance</li>
+                <li>Flexibility through polymorphism</li>
+                <li>Effective problem solving</li>
+                <li>Project decoupling (Separate project into groups)</li>
+            </ul>
+            <p>This are the four principles of OOP</p>
+        </section>
+        <section id="encapsulation" class="main-section">
+            <header>Encapsulation</header>
+            <p>The implementation and state of each object are privately held inside a defined boundary, or class. Other objects do not have access to this class or the authority to make changes but are only able to call a list of public functions, or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.</p>
+            <p>Take a look at this example. In the example we have defined two object classes and created an instance of each. So in layman term encapsulation principle states that the new instance of <em>motor1</em> cannot access the attributes of <em>person1</em>. If you try you should get such a warning.</p>
+            <code>
+                console.log('Hello world')
+            </code>
+        </section>
+        <section id="abstraction" class="main-section">
+            <header>Abstraction</header>
+            <p>Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. This concept helps developers more easily make changes and additions over time.</p>
+            <p>This is quite powerful in development and TypeScript provides us several ways of manupulating member visibilty in a class object.</p>
+            <p>Let us see how this work. In this example we have added public in all the Person attributes. By default all attributes are always public but for readability it is good practice to add it.</p>
+            <code>console.log('buenas')</code>
+            <p>We can use the following to control attribute visibilities:</p>
+        </section>
+        <section id="inheritance" class="main-section">
+            <header>Inheritance</header>
+            <p>Relationships and subclasses between objects can be assigned, allowing developers to reuse a common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.</p>
+            <p>Take a look at this example. You will NOTE that by extending the TeslaCompnany we have inherited all the public attributes and can call them when we create a new instance of TeslaEmployee. This can allow us have a base class and reuse the base class in different subsclasses.</p>
+            <code>console.log(Hola);</code>
+        </section>
+        <section id="polymorphism" class="main-section">
+            <header>Polymorphism</header>
+            <p>Objects can take on more than one form depending on the context. The program will determine which meaning or usage is necessary for each execution of that object, cutting down the need to duplicate code.</p>
+            <p>Let us understand this by going through an example. We will notice that the Person object is extended by two different subsclasses and take different context when each a new instance of each subsclass is created.</p>
+            <code>console.log('Hola');</code>
+        </section>
+        <section id="summary" class="main-section">
+            <header>Summary explanation</header>
+            <p>Encapsulation - Class objects are in a specific boundary. For example citizens in a country. They are all living within a specific boundary can governed by its laws.</p>
+            <p>Abstraction - Class objects can only share public properties and hide private properties. This creates a great way of controlling its behaviour.</p>
+            <p>Inheritance - We can inherit other classes and extend all there public properties.</p>
+            <p>Polymorphism - Objects can take various behaviour depending on the context.</p>
+
+        </section>
+    </main>
+    <footer>Text taken from: https://dev.to/kevin_odongo35/object-oriented-programming-with-typescript-574o</footer>
+</body>
+</html>
