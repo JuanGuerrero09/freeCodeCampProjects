@@ -1,0 +1,23 @@
+{
+  "name": "freecodecampprojects",
+  "version": "1.0.0",
+  "description": "All the freeCodeCamp certification projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanGuerrero09/freeCodeCampProjects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanGuerrero09/freeCodeCampProjects/issues"
+  },
+  "homepage": "https://github.com/JuanGuerrero09/freeCodeCampProjects#readme",
+  "devDependencies": {
+    "jest": "^29.4.2"
+  }
+}
